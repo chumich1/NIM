@@ -1,0 +1,16 @@
+require "Player"
+class Dumb_computer_player < Player
+  
+  #receives a board array and outputs the row and number of sticks to be removed
+  def turn(board)
+    row = rand(board.size) + 1
+    
+    
+    
+    num = rand(board[row-1].to_i) + 1
+    
+    return row, num
+     
+  end
+end
+
